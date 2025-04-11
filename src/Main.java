@@ -43,7 +43,7 @@ public class Main {
             sumPrice+=products[i].getPrice();
             sumIventoryValue+=products[i].getTotalInventoryValue();
         }
-        System.out.println(sumProduct);
+        System.out.println(Product.totalProduct);
         System.out.println(sumPrice/5);
         System.out.println(sumIventoryValue);
 

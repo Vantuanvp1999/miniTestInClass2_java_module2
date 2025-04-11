@@ -33,7 +33,9 @@ public class Product {
 
         return quantity * price;
     }
-
+    public double getAveragePrice(){
+        return totalInventoryValue / totalProduct;
+    }
     public String getId() {
         return id;
     }

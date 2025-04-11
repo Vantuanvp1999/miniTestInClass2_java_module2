@@ -47,7 +47,7 @@ public class Main {
         System.out.println(sumPrice/5);
         System.out.println(sumIventoryValue);
 
-        Product.storeName="Kho miền nam";
+        Product.storeName="Kho miền Nam";
         System.out.println(products[1].getStoreName());
 
     }

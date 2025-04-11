@@ -41,8 +41,8 @@ public class Main {
             sumIventoryValue+= products[i].getTotalInventoryValue();
         }
         System.out.println(sumProduct);
-        System.out.println(sumPrice/5);
-        System.out.println(sumIventoryValue);
+        System.out.println(Product.getAveragePrice());
+        System.out.println(Product.totalInventoryValue);
     }
 
     public static void findMaxQuantity(Product[] products) {

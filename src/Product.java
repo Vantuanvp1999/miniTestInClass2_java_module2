@@ -4,7 +4,7 @@ public class Product {
     private double price;
     private int quantity;
     public static int totalProduct;
-    private static double totalInventoryValue;
+    public static double totalInventoryValue;
    public static String storeName;
 
     @Override
@@ -25,15 +25,16 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
         totalProduct++;
+        totalInventoryValue += getTotalInventoryValue();
     }
-    public void setTotalInventoryValue(double totalInventoryValue) {
-        this.totalInventoryValue = totalInventoryValue;
-    }
+
     public double getTotalInventoryValue() {
 
         return quantity * price;
     }
-
+    public static double getAveragePrice(){
+        return totalInventoryValue / totalProduct;
+    }
     public String getId() {
         return id;
     }

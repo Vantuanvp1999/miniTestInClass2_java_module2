@@ -4,7 +4,7 @@ public class Product {
     private double price;
     private int quantity;
     public static int totalProduct;
-    private double totalInventoryValue;
+    private static double totalInventoryValue;
    public static String storeName;
 
     @Override
@@ -33,9 +33,7 @@ public class Product {
 
         return quantity * price;
     }
-    public double getAveragePrice(){
-        return totalInventoryValue / totalProduct;
-    }
+
     public String getId() {
         return id;
     }

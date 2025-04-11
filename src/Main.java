@@ -14,17 +14,21 @@ public class Main {
         System.out.println(p);
     }
         findElement(products);
-        for (Product p : products) {
-        if(p.getPrice()>1000000){
-            System.out.println(p);
-        }
-    }
+        findPriceHigherThamAMilion(products);
         findMaxQuantity(products);
 
         findSumFunction(products);
 
         Product.storeName="Kho miền Nam";
         System.out.println(products[1].getStoreName());
+    }
+
+    public static void findPriceHigherThamAMilion(Product[] products) {
+        for (Product p : products) {
+        if(p.getPrice()>1000000){
+            System.out.println(p);
+        }
+    }
     }
 
     public static void findSumFunction(Product[] products) {
